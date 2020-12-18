@@ -35,9 +35,8 @@ class App extends Component {
       timerStart: 0,
       timerTime: 0,
     });
-
-    this.startTimer();
     clearInterval(this.timer);
+    this.startTimer();
   };
 
   render() {
