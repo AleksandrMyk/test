@@ -29,14 +29,14 @@ class App extends Component {
     clearInterval(this.timer);
   };
 
-  resetTimer = () => {
-    this.setState({
+  resetTimer = async () => {
+    await this.setState({
       timerOn: true,
       timerStart: 0,
       timerTime: 0,
     });
     clearInterval(this.timer);
-    this.startTimer();
+    await this.startTimer();
   };
 
   render() {
